@@ -1,0 +1,67 @@
+/* Header styling */
+header {
+  background-color: rgb(230, 91, 27);
+  width: 100%;
+}
+
+#head2, #about {
+  font-style: normal;
+  margin: 27px;
+  color: rgb(253, 253, 248);
+  font-size: 21px;
+  text-decoration: none;
+  padding: 18px;
+}
+
+nav a {
+  border-right: 2px solid white;
+}
+
+/* Collage image styling */
+.collage {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  animation: imageFade 10s infinite;
+}
+
+/* Container styling */
+.container {
+  background-color: grey;
+}
+
+/* Marquee layout for Campus News, Events, Notices */
+.marquee div {
+  float: left;
+  width: 33%;
+  margin: 1px;
+}
+
+.heading1 {
+  border-bottom: 1px solid black;
+  margin: 5px;
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 480px) {
+  .large-screen-only {
+    display: none;
+  }
+}
+
+/* Background image animation */
+@keyframes imageFade {
+  0% {
+    background-image: url('img1.jpeg'); /* Start with img1 */
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    background-image: url('img2.jpeg'); /* Switch to img2 */
+    opacity: 0.5; /* Semi-transparent */
+  }
+  100% {
+    background-image: url('img1.jpeg'); /* Switch back to img1 */
+    opacity: 1; /* Fully visible */
+  }
+}
